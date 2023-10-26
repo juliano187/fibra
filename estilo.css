@@ -106,9 +106,7 @@ article{
       align-items: center;
 
     }
-    a{
-        visibility: hidden;
-    }
+   
     #btn_con{
         visibility: visible;
         justify-content: center;
