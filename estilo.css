@@ -1,0 +1,173 @@
+*{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+ box-sizing: border-box;
+}
+body{
+ background: black;  
+    
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+   margin: 0 auto;
+  box-shadow: 0px 5px 50px red;
+  border-radius: 0px 0px 30px 30px;
+  animation-name: slide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transform: translateY(-1000px);
+}
+.menu{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+img{
+    border-radius: 10px;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+    height: 40px;
+  
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 5px 50px red;
+    border-radius: 30px 30px 0px 0px;
+   
+}
+
+    
+ 
+
+a{
+    text-decoration: none;
+    color: rgb(107, 209, 5);
+    margin: 20px;
+    font-size: 20px;
+    padding: 2px 2px ;
+}
+
+a:hover{
+    margin: 20px;
+   color: red;
+    transition: 0.2s;
+    background-color: rgb(61, 226, 10);
+ padding: 2px 2px ;
+ border-radius: 30px;
+
+}
+#btn_con{
+    
+   
+    padding: 5px 20px;
+    color: red;
+    border-radius: 5px;
+}
+#btn_con:hover{
+   transition: 0.3s;
+   transform: scale(1.2);
+   background: none;
+    
+    
+}
+
+aside{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+span{
+    color: rgb(243, 245, 242);
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 10px 5px 20px rgb(14, 221, 7);
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: white;
+    transform: translateX(2000px);
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.card{
+    margin: 20px;
+    text-align: center;
+    width: 150px;
+    height: 200px;
+    background: linear-gradient(90deg, rgb(24, 173, 4) 0%, rgb(22, 22, 22) 35%, rgb(1, 155, 14) 100%);
+    color: white;
+    border-radius: 30px;
+    border: 10px solid rgb(247, 250, 247);
+    box-shadow: 0px 5px 20px rgb(29, 218, 4);
+    transform: translatex(-2000px);
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+article{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    transform: translateY(-2000);
+    
+  
+}
+.card:hover{
+    transform: scale(1.1);
+  border-radius: 30px;
+  
+
+
+}
+@keyframes slide{
+    to{
+    transform:translateY(0)
+  }
+    }
+@media screen and (max-width: 680px){
+    article{
+        flex-direction: column;
+      align-items: center;
+
+    }
+    a{
+        visibility: hidden;
+    }
+    .comprar{
+        visibility: visible;
+    }
+    #btn_con{
+        visibility: visible;
+        justify-content: center;
+       
+    }
+    .menu{
+      position: absolute;
+    }
+    main{
+       flex-direction: column;
+       align-items: center;
+    }
+    #kinnet{
+        width: 200px;
+    }
+    }
+
+
+
+    
+
+
+    
